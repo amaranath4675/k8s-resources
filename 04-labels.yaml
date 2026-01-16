@@ -1,0 +1,12 @@
+apiversion: v1
+kind: Pod
+metadata:
+  name: labels-demo 
+  lables:
+    project: roboshop
+    environment: dev
+    trainer: amar
+spec:
+  containers:
+  - name: frontend
+    image: nginx
