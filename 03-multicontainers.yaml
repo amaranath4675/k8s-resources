@@ -4,7 +4,7 @@ metadata:
   name: multi-containers
   namespace: roboshop
   loables:
-    environment : dev
+    environment: dev
   specs:
   containers: 
   - name: nginx
@@ -12,4 +12,3 @@ metadata:
   - nmae: almalinux
     image: almalinux
     commands: ["sleep","1000"]
-    
