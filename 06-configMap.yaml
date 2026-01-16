@@ -1,0 +1,23 @@
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   name: pod-config
+#   namespace: roboshop
+#   labels:
+#     environment: dev
+# data:
+#   Course: "DevOps"
+#   Trainer: "Amar"
+#   duration: "120hrs"
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pod-config
+  namespace: roboshop
+  labels:
+    environment: dev
+data:
+  Course: "DevOps"
+  Duration: "120hrs"
+  Trainer: "Amar"
