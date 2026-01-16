@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: config-map-demo
+  namespace: roboshop
+  labels:
+    environment: dev
+  envFrom:
+    - configMapRef:
+        name: pod-config
+spec:
+  containers: 
+    - name: nginx
+      image: nginx
