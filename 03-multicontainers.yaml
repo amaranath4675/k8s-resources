@@ -3,12 +3,12 @@ kind: Pod
 metadata:
   name: multi-containers
   namespace: roboshop
-  loables:
+  labels:
     environment: dev
-  specs:
+spec:
   containers: 
   - name: nginx
     image: nginx
-  - nmae: almalinux
+  - name: almalinux
     image: almalinux
     commands: ["sleep","1000"]
